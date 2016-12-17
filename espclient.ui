@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>EspClient</class>
- <widget class="QWidget" name="EspClient" >
-  <property name="geometry" >
+ <widget class="QWidget" name="EspClient">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -9,12 +10,76 @@
     <height>300</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>EspClient</string>
   </property>
+  <widget class="QLineEdit" name="lineEditAddress">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>172.16.14.147</string>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::LogicalMoveStyle</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPort">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8080</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonConnect">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>20</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>151</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonSend">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>60</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
